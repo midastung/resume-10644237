@@ -1,0 +1,335 @@
+body{
+    background-color: rgb(34,31,92);
+}
+.color-pur
+{
+    color:rgb(34,31,92);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.name-h1 {
+    font-size: 100px;
+}
+
+/*英文字型*/
+h1,
+h4,
+h2 {
+    font-family: 'Bree Serif', serif;
+}
+
+h5,
+h6 {
+    font-family: 'Cormorant Unicase', serif;
+}
+
+/*dialogCSS*/
+.dialog1 {
+    width: 100%;
+    position: relative;
+    margin: 0 -50px 0 -385px;
+    z-index: 1;
+}
+
+.dialog-text1 {
+    z-index: 2;
+    position: absolute;
+    margin: -140px 0 0 -220px;
+}
+
+.dialog-text2 {
+    z-index: 2;
+    font-size: 40px;
+    position: relative;
+    margin-left: -200px;
+
+}
+
+.dialog-text3:hover {
+    transition: 0.3s;
+    color: white;
+}
+
+/*獨立宣告CSS*/
+.side-li {
+    list-style-type: none;
+}
+
+/*中文字型*/
+.chinese-font {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.custom-top-nav {
+    overflow: hidden;
+    box-shadow: 0 3px 8px 0 rgb(0, 0, 0, 0.2);
+}
+
+.custom-top-nav .inner-header-nav {
+    padding: 0 50px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.home-logo {
+    max-width: 50%;
+
+}
+
+.home-expand-logo {
+    max-width: 25%;
+    position: relative;
+    margin-left: 30%;
+    display: flex;
+}
+
+.btn-style {
+    display: flex;
+}
+
+.resume-wrapper {
+    background-color: rgb(252, 84, 66)
+}
+
+.under-line {
+    box-shadow: 0 3px;
+    padding-bottom: 5px;
+}
+
+.round_icon {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+/*背景圖*/
+.bg-img {
+    background-image: url(https://i.screenshot.net/kqer6ay);
+    background-position: 0 -25px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+/*底下藍色背景*/
+.second-bg {
+    background-color: #8AD0FA;
+}
+
+/*回頂部CSS/開始*/
+.v {
+    position: relative;
+    margin: 15px 100px 0 100px;
+}
+
+#gotop {
+    position: fixed;
+    z-index: 90;
+    right: 30px;
+    bottom: 31px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background: #33b5e5;
+    line-height: 50px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+#gotop :hover {
+    background: #0099CC;
+}
+
+/*回頂部CSS/結束*/
+
+/*CARD CSS/開始*/
+.edu-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    max-width: 205px;
+}
+
+.edu-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.img-card {
+    width: 150px;
+    /*    height: 150px;*/
+    line-height: 150px;
+    max-width: 100%;
+    display: block;
+}
+
+.card-text {
+    position: relative;
+    margin-left: 50%;
+}
+
+/*
+
+grid+align垂直置中
+*/
+.cont {
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SKILLS */
+
+#skills {
+
+    padding: 0px 15px 75px 15px;
+    color: #fff;
+}
+
+.skills-text {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+.skills-title {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.skills-title.underline:before {
+    width: 40px;
+}
+
+.skills-list {
+    overflow: hidden;
+    position: relative;
+    z-index: 10
+}
+
+.skill-name:after {
+    background-color: #fff;
+    content: '';
+    display: block;
+    height: 1rem;
+    position: relative;
+    top: 3px;
+    /*top: 1rem;*/
+    width: 50%;
+}
+
+.skill-percent {
+    font-size: 0;
+    height: 0.9rem;
+    position: relative;
+    top: -.8rem;
+    transition: 3s linear;
+    width: 0;
+}
+
+/* SKILL BAR COLORS */
+
+.skill-percent-html {
+    background-color: #FF5C00;
+}
+
+.skill-percent-css {
+    background-color: #00B1DB;
+}
+
+.skill-percent-ps {
+    background-color: #FFC100;
+}
+
+.skill-percent-ai {
+    background-color: #FF768E;
+}
+
+.skill-percent-javascript {
+    background-color: #FF8B00;
+}
+
+.skill-percent-wordpress {
+    background-color: #0073b0;
+}
+
+.skill-percent-php {
+    background-color: #464c99;
+}
+
+.skill-percent-git {
+    background-color: #ff5c00;
+}
+
+/* Heading Underline */
+
+.underline {
+    display: inline-block;
+    position: relative;
+}
+
+.underline:before {
+    background-color: #fff;
+    bottom: -15px;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 110%;
+}
+
+
+/*timeline*/
+.timeline {
+  list-style: none;
+}
+.timeline > li {
+  margin-bottom: 60px;
+}
+
+/* for Desktop */
+@media ( min-width : 640px ){
+  .timeline > li {
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+  }
+  .timeline-date {
+    width: 110px;
+    float: left;
+    margin-top: 20px;
+  }
+  .timeline-content {
+    width: 75%;
+    float: left;
+    border-left: 3px #e5e5d1 solid;
+    padding-left: 30px;
+  }
+  .timeline-content:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #6fc173;
+    position: absolute;
+    left: 106px;
+    top: 24px;
+    border-radius: 100%;
+  }
+}
